@@ -2,14 +2,50 @@
 <html>
 <head>
     <title>Contact Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    {% for ph_number in phone_number %}
-    <h1>Contact Detail</h1>
-    <h2>{{ ph_number.contact.name }}</h2>
-    <ul>
-        <li>{{ ph_number.number }}</li>
-    </ul>
-    {% endfor %}
+    <div class="container">
+        {% for ph_number in phone_number %}
+        <h1>Contact Detail</h1>
+        <h2>{{ ph_number.contact.name }}</h2>
+        <ul>
+            <li>{{ ph_number.number }}</li>
+        </ul>
+        {% endfor %}
+    </div>
 </body>
 </html>
