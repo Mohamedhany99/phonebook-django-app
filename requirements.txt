@@ -1,0 +1,5 @@
+django==4.2
+djangorestframework==3.14.0
+djangorestframework-simplejwt[crypto]==5.2.2
+python-dotenv==1.0.0
+python-decouple==3.8
