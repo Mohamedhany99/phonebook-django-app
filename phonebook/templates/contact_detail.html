@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Detail</title>
+</head>
+<body>
+    {% for ph_number in phone_number %}
+    <h1>Contact Detail</h1>
+    <h2>{{ ph_number.contact.name }}</h2>
+    <ul>
+        <li>{{ ph_number.number }}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
