@@ -2,6 +2,10 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404
 from .models import Contact, PhoneNumber
 
 
+def home(request):
+    return render(request, "index.html")
+
+
 # Create your views here.
 def add_contact(request):
     if request.method == "POST":
